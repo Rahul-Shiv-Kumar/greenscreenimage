@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Green Screen Image</title>
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+
+<body>
+<div id ="container">
+<h1>Image Uploader</h1>
+  <div id="canva">
+    <canvas id="can">
+    </canvas>
+    <canvas id="can2">
+    </canvas>
+  </div>
+<p id= "main">
+Foreground: 
+<input type="file" class = "finput" id = "fgimg" accept ="image/*" multiple = "false">
+ 
+ <input class = "button" type="button" value = "Upload" onclick ="loadForegroundImg()">  
+ <br />
+ <br />
+ Background:
+<input type="file" class = "finput" id = "bgimg" accept ="image/*" multiple = "false">
+
+<input class = "button" type="button" value = "Upload" onclick ="loadBackgroundImg()">  
+</p>
+<p>
+<input class = "button" type="button" value = "Compose" onclick ="greenScreen()"> 
+ <input class = "button" type="button" value = "Clear" onclick="clearCanvas()" >  
+</p>
+  <p><em>*Background image should be with green background.<em></p>
+    <p><strong>Reference: </strong> Duke Learn to code</p>
+</div>
+</body>
+<!-- partial -->
+  <script  src="./js/script.js"></script>
+
+</body>
+</html>

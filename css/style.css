@@ -1,0 +1,96 @@
+body{
+  background-color:black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#container{
+  background: lightgoldenrodyellow;
+  text-align: center;
+  padding: 1px 100px 10px 100px;
+  margin-right: 2em;
+  margin-left: 2em;
+  margin-top: 50px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 8px 8px lightskyblue;
+}
+
+h1{
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+  color: darkblue;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: yellow;
+  box-shadow: 3px 4px black;
+}
+canvas{
+  width: 300px;
+  height:200px;
+  border-left: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 2px 2px black;
+}
+#canva{
+  text-align: center;
+}
+
+input{
+  font-size: 14px;
+}
+#main{
+  text-align: center;
+}
+
+.button{
+  background-color: #ccf;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px black;
+  cursor: pointer;
+}
+.button:active{
+  transform: translateY(4px);
+  box-shadow: none;
+}
+
+.button:hover{
+  background-color: black;
+  color: white;
+  border: none;
+  opacity: 0.7;
+}
+
+.finput{
+  background-color: lightpink;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+}
+input[type=file]{
+  border-radius: 4px;
+}
+input[type=file]::file-selector-button {
+  border: 2px solid #6c5ce7;
+  padding: .2em .4em;
+  border-radius: .4em;
+  background-color:white;
+  transition: 1s;
+}
+
+input[type=file]::file-selector-button:hover {
+  background-color: #81ecec;
+  border: 2px solid rgb(7, 230, 174)7;
+}
+
+@media(max-width:1000px){
+  canvas{
+    width: 200px;
+    height: 150px;
+  }
+  #container{
+    /* width: 50%;
+    height: 50%; */
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
